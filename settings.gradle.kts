@@ -1,1 +1,1 @@
-rootProject.name = "mail.sender"
+rootProject.name = "mail_sender"
