@@ -1,6 +1,6 @@
 # Mail Sender Service
 ### How to build
-- git clone
+- git clone git@github.com:evgPhoenix/mailService.git
 - mkdir to service directory
 - change your ```spring.mail.username=
                  spring.mail.password=```
