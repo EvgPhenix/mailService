@@ -12,7 +12,7 @@
 
 #### This service (tag v1.0) can send e-mails
 
-- curl -X POST http://localhost:8090/mails?mailAddress=recipien.mail@gmail.com&orderDetails=apple=2,orange=3&totalCost=$1.1 -H 'USER_ID: John Doe'  | python -m json.tool
+- curl -X POST http://localhost:8090/mails?mailAddress=recipien.mail@gmail.com&orderDetails=apple=2,orange=3&totalCost=$1.1 -H 'USER_ID: John Doe'
 - Unit tests has added
 
 

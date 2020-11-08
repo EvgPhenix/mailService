@@ -36,7 +36,7 @@ class MailService(private val javaMailSender: JavaMailSender) {
         var message = ""
         if (!isSuccess) {
             message = String.format("<h2>Thank you for placing order, %s!</h2><h3>Your order is</h3><p>%s</p>" +
-                    "<p>Total cost is %s</p><h3>Something went wrong, please try again later</h3><p>Sincerely yours \"Our SHOP\"</p>",
+                    "<p>Total cost is %s</p><h3>These goods are out of stock</h3><p>Sincerely yours \"Our SHOP\"</p>",
                     userId, orderDetails, totalCost)
         } else {
             message = String.format("<h2>Thank you for placing order, %s!</h2><h3>Your order is</h3><p>%s</p>" +
