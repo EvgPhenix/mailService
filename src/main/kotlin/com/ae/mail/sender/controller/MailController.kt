@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*
 class OrdersController(private val mailService: MailService) {
 
     @PostMapping(value = [MAILS])
-    fun getOffers(@RequestHeader(USER_ID) userId: String,
+    fun sendMessage(@RequestHeader(USER_ID) userId: String,
                   @RequestParam("mailAddress", defaultValue = true.toString()) mailAddress: String,
                   @RequestParam("isSuccess", defaultValue = true.toString()) isSuccess: Boolean,
                   @RequestParam("orderDetails", defaultValue = "") orderDetails: String,
